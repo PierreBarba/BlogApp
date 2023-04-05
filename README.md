@@ -93,7 +93,7 @@ To clone this repository to your desired folder:
 - You can download the **Zip** file from the GitHub repository, or clone the repository with:
 
 ```console
-git clone https://github.com/paulsaenzsucre/blog-app.git
+git clone https://github.com/PierreBarba/BlogApp.git
 ```
 
 - Access the cloned directory with:
@@ -139,7 +139,7 @@ We will implement this on the future:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/paulsaenzsucre/blog-app/issues).
+Feel free to check the [issues page](https://github.com/PierreBarba/BlogApp.git).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
