@@ -78,6 +78,10 @@ To get a local copy up and running, follow these steps:
 
 ## Install
 
+- bundle install
+- rails db:create
+- rails db:migrate
+
 In order to run this project you need to have installed:
 
 - [ ] You’ll need to have Ruby and Rails on your machine.
@@ -88,13 +92,10 @@ Optionally, in order to modify this project you should to have installed:
 
 - [ ] Code editor like: [Visual Studio code](https://code.visualstudio.com/), [Sublime text](https://www.sublimetext.com/) or others...
 
-- bundle install
-- rails db:create
-- rails db:migrate
 
 ## Run tests
 
-> rspec spec
+- rspec spec
 
 ### Setup
 
