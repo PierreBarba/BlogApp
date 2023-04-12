@@ -31,8 +31,6 @@
 
 # 📖 Blog App <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **Blog App** is a web app that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -44,7 +42,7 @@ This project was implemented using:
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href=""></a></li>
   </ul>
 </details>
 
@@ -76,6 +74,12 @@ To get a local copy up and running, follow these steps:
 
 ### Prerequisites
 
+## Install
+
+- bundle install
+- rails db:create
+- rails db:migrate
+
 In order to run this project you need to have installed:
 
 - [ ] You’ll need to have Ruby and Rails on your machine.
@@ -85,6 +89,11 @@ Optionally, in order to modify this project you should to have installed:
 - [ ] Git.
 
 - [ ] Code editor like: [Visual Studio code](https://code.visualstudio.com/), [Sublime text](https://www.sublimetext.com/) or others...
+
+
+## Run tests
+
+- rspec spec
 
 ### Setup
 
