@@ -44,7 +44,7 @@ This project was implemented using:
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href=""></a></li>
   </ul>
 </details>
 
