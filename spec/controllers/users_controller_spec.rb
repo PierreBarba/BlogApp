@@ -1,25 +1,36 @@
 require 'rails_helper'
-
-RSpec.describe UsersController, type: :request do
-  describe 'Get id' do
-    it 'returns a successful response' do
-      get users_path
-      expect(response).to be_successful
+RSpec.describe 'Users', type: :request do
+  describe 'GET /index' do
+    it 'returns http success' do
+      get '/users/'
+      expect(response).to have_http_status(:success)
     end
 
-    it 'creates template index' do
-      get users_path
+    it 'returns render index template' do
+      get '/users/'
       expect(response).to render_template(:index)
     end
 
-    it 'create template show' do
+    it 'body includes correct placeholder text' do
+      get '/users/'
+      expect(response.body).to include('Users#index')
+    end
+  end
+
+  describe 'GET /show' do
+    it 'returns http success' do
+      get '/users/:id'
+      expect(response).to have_http_status(:success)
+    end
+
+    it 'returns render show template' do
       get '/users/:id'
       expect(response).to render_template(:show)
     end
 
-    it 'The response body contains accurate title.' do
-      get '/users/'
-      expect(response.body).to include('Users#index')
+    it 'body includes correct placeholder text' do
+      get '/users/:id'
+      expect(response.body).to include('Users#show')
     end
   end
 end
