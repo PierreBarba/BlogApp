@@ -1,2 +1,14 @@
-<h1>Posts#show</h1>
-<p>the route that you need to follow is app/views/posts/show.html.erb</p>
+<div class="post-comment-4">
+  <div class="complete-post">
+    <h4>Post #<%= @post.id %> by <%= @user.name %></h4>
+    <p class='post-likes'>Comments <%= @post.comments_counter %>, Likes <%= @post.likes_counter %></p>
+    <p class='post-text'><%= @post.text %></p>
+  </div>
+  <% if @post.comments.length.positive? %>
+    <div class="comments">
+        <% @post.comments.each do |comment| %>
+          <p><%= comment.author.name %>: <%= comment.text %></p>
+        <% end %>
+    </div>
+  <% end %>
+</div>

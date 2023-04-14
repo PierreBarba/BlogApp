@@ -1,2 +1,27 @@
-<h1>Posts#index</h1>
-<p>the route that you need to follow is app/views/posts/index.html.erb</p>
+<%= render 'shared/user_info', user: @user %>
+
+<div class="">
+  <% @posts.each do |post| %>
+    <div class="post-container">
+      <%= link_to user_post_path(@user, post) do %>
+        <div class="post">
+          <h5 class="post-title-h3">Post <%= post.id %></h5>
+          <span class="num-post"><h3 class="post-h3">Post <%= post.title %></h3><br></span>
+          <p class="post-text"><%= post.text %></p>
+        </div>
+      <% end %>
+    </div>
+    <% if post.comments.length.positive? %>
+      <div class="section-comments">
+        <% post.recent_comments.each do |comment| %>
+          <p class="section-comments-f1"><%= comment.text %></p>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+  <div class="container-button-pagination">
+    <%= button_to user_post_path(@user.id, @user.posts.order(id: :desc).first.id), method: :get, class: "button-pagination" do %>
+      Pagination
+    <% end %>
+  </div>
+</div>
