@@ -168,44 +168,24 @@ li {
 .post-likes {
   display: flex;
   justify-content: right;
-  margin: 0px 30px 0px 0px;
+  margin: 0 30px 0 0;
 }
-.box-container-post{
+
+.box-container-post {
   display: flex;
   flex-direction: column;
 }
 
-.form-field{
-  width: 90%;
-  height: 30px;
-  border-bottom: 3px solid black;
-  border-right: 3px solid black;
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-  margin: 0px 0px 20px 40px;
-}
-
-.form-text-area{
-  align-items: center;
-  width: 90%;
-  height: 100px;
-  margin: 0px 0px 20px 40px;
-  border-bottom: 3px solid black;
-  border-right: 3px solid black;
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-}
-
-.new-post{
+.new-post {
   text-align: center;
-  margin: 15px 0px 25px 0px;
+  margin: 15px 0 25px 0;
 }
 
-.button-submit{
+.button-submit {
   font-size: large;
   height: 40px;
   width: 150px;
-  margin: 0px 0px 20px 40px;
+  margin: 0 0 20px 40px;
   border-radius: 5px;
   border-bottom: 3px solid black;
   border-right: 3px solid black;
@@ -213,34 +193,34 @@ li {
   border-top: 1px solid black;
 }
 
-.new-comment-title{
+.new-comment-title {
   text-align: center;
-  margin: 15px 0px 25px 0px;
+  margin: 15px 0 25px 0;
 }
 
-.form-title{
-  margin: 30px 0px 25px 0px;
+.form-title {
+  margin: 30px 0 25px 0;
 }
 
-.form-text-area{
+.form-text-area {
   width: 90%;
   height: 100px;
   border-bottom: 3px solid black;
   border-right: 3px solid black;
   border-left: 1px solid black;
   border-top: 1px solid black;
-  margin: 0px 0px 25px 40px;
+  margin: 0 0 25px 40px;
 }
 
-.form-field{
-  margin: 30px 0px 25px 40px;
+.form-field {
+  margin: 30px 0 25px 40px;
 }
 
-.button-new-comment-submit{
+.button-new-comment-submit {
   font-size: large;
   height: 40px;
   width: 150px;
-  margin: 0px 0px 20px 40px;
+  margin: 0 0 20px 40px;
   border-radius: 5px;
   border-bottom: 3px solid black;
   border-right: 3px solid black;
@@ -248,11 +228,11 @@ li {
   border-top: 1px solid black;
 }
 
-.buton-creat-new-comment{
+.buton-creat-new-comment {
   font-size: large;
   height: 40px;
   width: 150px;
-  margin: 0px 0px 20px 40px;
+  margin: 0 0 20px 40px;
   border-radius: 5px;
   border-bottom: 3px solid black;
   border-right: 3px solid black;
@@ -260,11 +240,11 @@ li {
   border-top: 1px solid black;
 }
 
-.add-like{
-    font-size: large;
+.add-like {
+  font-size: large;
   height: 40px;
   width: 150px;
-  margin: 0px 0px 20px 40px;
+  margin: 0 0 20px 40px;
   border-radius: 5px;
   border-bottom: 3px solid black;
   border-right: 3px solid black;
@@ -272,6 +252,6 @@ li {
   border-top: 1px solid black;
 }
 
-.container-buttons-add{
+.container-buttons-add {
   display: flex;
 }
