@@ -53,6 +53,12 @@ RSpec.describe 'post_index', type: :feature do
     end
   end
 
+it 'I can see how many likes a post has' do
+    @user1.posts.each do |post|
+      expect(page).to have_content(post.likes_counter)
+    end
+  end
+
   it 'I can see a section for pagination if there are more posts than fit on the view.' do
     expect(page).to have_content('Pagination')
   end
