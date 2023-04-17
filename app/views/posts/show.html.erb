@@ -11,4 +11,12 @@
         <% end %>
     </div>
   <% end %>
+    <div class="container-buttons-add">
+      <%= link_to new_user_post_comment_path(@user, @post) do %>
+        <button class="buton-creat-new-comment">New Comment</button>
+      <% end %>
+      <%= form_with model: Like.new, url: user_post_likes_path(@user, @post) do |form| %>
+      <% form.submit "Add Like", class: "add-like" %>
+      <% end %>
+    </div>
 </div>
