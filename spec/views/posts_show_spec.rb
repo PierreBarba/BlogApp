@@ -21,8 +21,8 @@ RSpec.describe 'post_show', type: :feature do
     @user1.posts.each do |post|
       expect(page).to have_content(post.likes_counter)
     end
-  end 
-  
+  end
+
   it 'I can see who wrote the post' do
     expect(page).to have_content(@post1.author.name)
   end

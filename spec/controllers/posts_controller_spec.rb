@@ -8,7 +8,7 @@ RSpec.describe 'Posts', type: :request do
       posts_counter: 0
     )
   end
-  
+
   describe 'GET /index' do
     it 'returns http success' do
       get users_path
