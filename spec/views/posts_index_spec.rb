@@ -4,11 +4,10 @@ RSpec.describe 'post_index', type: :feature do
   before :each do
     @user1 = User.create(
       name: 'User 1',
-      photo: 'https://unsplash.com/es/fotos/zthd6ppSnSc',
+      photo: 'https://unsplash.com/photos/Hekapoo',
       bio: 'User1 bio',
       posts_counter: 0
     )
-
     @post1 = Post.create(title: 'post 1', text: 'new post 1', comments_counter: 0, likes_counter: 0, author: @user1)
     @post2 = Post.create(title: 'post 2', text: 'new post 2', comments_counter: 0, likes_counter: 0, author: @user1)
     @post3 = Post.create(title: 'post 3', text: 'new post 3', comments_counter: 0, likes_counter: 0, author: @user1)
@@ -49,7 +48,7 @@ RSpec.describe 'post_index', type: :feature do
 
   it 'I can see how many comments a post has' do
     @user1.posts.each do |post|
-      expect(page).to have_content(post.title)
+      expect(page).to have_content(post.comments_counter)
     end
   end
 
