@@ -96,13 +96,12 @@ Optionally, in order to modify this project you should to have installed:
 To run the tests run the following commands:
 
 Install gems
-```ruby
+- ruby
   bundle install
-```
+
 Run tests
-```ruby
+- ruby
   rspec spec
-```
 
 ### Setup
 
