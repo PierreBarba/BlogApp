@@ -93,7 +93,15 @@ Optionally, in order to modify this project you should to have installed:
 
 ## Run tests
 
-- rspec spec
+To run the tests run the following commands:
+
+Install gems
+- ruby
+  bundle install
+
+Run tests
+- ruby
+  rspec spec
 
 ### Setup
 

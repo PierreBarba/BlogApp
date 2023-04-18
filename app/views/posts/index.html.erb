@@ -6,7 +6,7 @@
       <%= link_to user_post_path(@user, post) do %>
         <div class="post">
           <h5 class="post-title-h3">Post <%= post.id %></h5>
-          <span class="num-post"><h3 class="post-h3"> <%= post.title %></h3><br></span>
+          <span class="num-post"><h3 class="post-h3"> <%= post.title %>, comments: <%= post.comments_counter %>, likes: <%= post.likes_counter %></h3><br></span>
           <p class="post-text"><%= post.text %></p>
         </div>
       <% end %>
