@@ -62,8 +62,9 @@ RSpec.describe 'post_index', type: :feature do
     expect(page).to have_content('Pagination')
   end
 
-  it 'When I click on a post, it redirects me to that posts show page.' do
-    click_link "Post #{@post1.id}"
+  it 'When I click on a post, it redirects me to that post\'s show page.' do
+    link = find("a[href='#{user_post_path(@user1, @post1)}']")
+    link.click
     expect(page).to have_current_path(user_post_path(@user1, @post1))
   end
 end
