@@ -271,54 +271,53 @@ li {
   margin: 50px 50px 50px 50px;
 }
 
-.logIn{
+.logIn {
   text-align: center;
 }
 
-.signUp{
+.signUp {
   text-align: center;
 }
 
-.linkSign{
+.linkSign {
   display: block;
   width: 44px;
-  margin: 20px auto 0px auto;
+  margin: 20px auto 0 auto;
 }
 
-.buttonSignUp{
+.buttonSignUp {
   display: block;
   width: 117px;
-  margin: 0px auto 20px auto;
+  margin: 0 auto 20px auto;
 }
 
-.buttonResetPassword{
+.buttonResetPassword {
   display: block;
   width: 238px;
-  margin: 0px auto 20px auto;
+  margin: 0 auto 20px auto;
 }
 
-.titleFrgotPassword{
+.titleFrgotPassword {
   text-align: center;
 }
 
-.changePassword{
+.changePassword {
   text-align: center;
 }
 
-.buttonChangePassword{
+.buttonChangePassword {
   display: block;
   width: 262px;
   margin: auto;
 }
 
-.confirmInstructions{
+.confirmInstructions {
   display: block;
   width: 262px;
   margin: auto;
 }
 
-
-#user_name{
+#user_name {
   width: 90%;
   border-bottom: 3px solid black;
   border-right: 3px solid black;
@@ -326,7 +325,7 @@ li {
   border-top: 1px solid black;
 }
 
-#user_email{
+#user_email {
   width: 90%;
   border-bottom: 3px solid black;
   border-right: 3px solid black;
@@ -334,7 +333,7 @@ li {
   border-top: 1px solid black;
 }
 
-#user_password{
+#user_password {
   width: 90%;
   border-bottom: 3px solid black;
   border-right: 3px solid black;
@@ -342,7 +341,7 @@ li {
   border-top: 1px solid black;
 }
 
-#user_password_confirmation{
+#user_password_confirmation {
   width: 90%;
   border-bottom: 3px solid black;
   border-right: 3px solid black;
@@ -353,17 +352,17 @@ li {
 .LinkSignUp {
   display: block;
   width: 62px;
-  margin: 0px auto 0px auto;
+  margin: 0 auto 0 auto;
 }
 
 .forgotPassword {
   display: block;
   width: 148px;
-  margin: 0px auto 0px auto;
+  margin: 0 auto 0 auto;
 }
 
-.buttonLogIn{
+.buttonLogIn {
   display: block;
   width: 117px;
-  margin: 0px auto 20px auto;
+  margin: 0 auto 20px auto;
 }
