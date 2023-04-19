@@ -261,3 +261,109 @@ li {
 .container-buttons-add {
   display: flex;
 }
+
+.user-img {
+  height: 180px;
+  margin: 0 40px 0 0;
+}
+
+.field {
+  margin: 50px 50px 50px 50px;
+}
+
+.logIn{
+  text-align: center;
+}
+
+.signUp{
+  text-align: center;
+}
+
+.linkSign{
+  display: block;
+  width: 44px;
+  margin: 20px auto 0px auto;
+}
+
+.buttonSignUp{
+  display: block;
+  width: 117px;
+  margin: 0px auto 20px auto;
+}
+
+.buttonResetPassword{
+  display: block;
+  width: 238px;
+  margin: 0px auto 20px auto;
+}
+
+.titleFrgotPassword{
+  text-align: center;
+}
+
+.changePassword{
+  text-align: center;
+}
+
+.buttonChangePassword{
+  display: block;
+  width: 262px;
+  margin: auto;
+}
+
+.confirmInstructions{
+  display: block;
+  width: 262px;
+  margin: auto;
+}
+
+
+#user_name{
+  width: 90%;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+#user_email{
+  width: 90%;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+#user_password{
+  width: 90%;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+#user_password_confirmation{
+  width: 90%;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.LinkSignUp {
+  display: block;
+  width: 62px;
+  margin: 0px auto 0px auto;
+}
+
+.forgotPassword {
+  display: block;
+  width: 148px;
+  margin: 0px auto 0px auto;
+}
+
+.buttonLogIn{
+  display: block;
+  width: 117px;
+  margin: 0px auto 20px auto;
+}
