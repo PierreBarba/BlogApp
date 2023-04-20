@@ -366,3 +366,37 @@ li {
   width: 117px;
   margin: 0 auto 20px auto;
 }
+
+.add-new-post{
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  padding: 5px 1px 5px 1px;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.btn-delete-comment{
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  padding: 5px 1px 5px 1px;
+  border-radius: 5px;
+  width: 150px;
+  margin: 0px 0px 15px 15px;
+}
+
+.btn-delete-post{
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  padding: 5px 1px 5px 1px;
+  border-radius: 5px;
+  width: 150px;
+  margin: 0px 0px 15px 15px;
+}
