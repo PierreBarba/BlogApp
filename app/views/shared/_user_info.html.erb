@@ -1,9 +1,13 @@
 <div class="container-flex"> 
-    <div>
-        <img class="img-per" src="<%= user.photo %>" alt="<%= user.name %>">
-    </div>
-    <div class="user-info">
-        <h2><%= user.name %></h2>
-        <h3 class='num-post-user' >Number of posts: <%= user.posts_counter %></h3>
-    </div>
+  <%= link_to user_path(user.id) do %>
+    <% if user.photo.nil? %>
+      <%= image_tag("https://cdn-icons-png.flaticon.com/512/6073/6073874.png", class: "user-img") %>
+    <% else %>
+      <%= image_tag(user.photo, class: "user-img") %>
+    <% end %>
+  <% end %>
+  <div class="user-info">
+    <h2><%= user.name %></h2>
+    <h3 class='num-post-user'>Number of posts: <%= user.posts_counter %></h3>
+  </div>
 </div>

@@ -3,23 +3,35 @@
 <div class="">
   <% @posts.each do |post| %>
     <div class="post-container">
-      <%= link_to user_post_path(@user, post) do %>
         <div class="post">
-          <h5 class="post-title-h3">Post <%= post.id %></h5>
+          <h5 class="post-title-h3"><%=link_to "Post #{post.id}", user_post_path(@user, post)  %></h5>
           <span class="num-post"><h3 class="post-h3"> <%= post.title %>, comments: <%= post.comments_counter %>, likes: <%= post.likes_counter %></h3><br></span>
           <p class="post-text"><%= post.text %></p>
+          <% if can? :destroy, post %>
+          <%= button_to "Delete Post", user_post_path(post.author, post),
+              class: "btn-delete-post",
+              method: :delete,
+              data: { turbo_confirm: "Are you sure?" } %>
+          <% end %>
         </div>
-      <% end %>
     </div>
+
     <% if post.comments.length.positive? %>
       <div class="section-comments">
         <% post.recent_comments.each do |comment| %>
           <p class="section-comments-f1"><%= comment.text %></p>
+          <% if can? :destroy, comment %>
+          <%= button_to "Delete comment", user_post_comment_path(comment.author_id, comment.post_id, comment), class: "btn-delete-comment",
+          method: :delete,data: { turbo_confirm: "Are you sure?" } %>
+        <% end %>
         <% end %>
       </div>
     <% end %>
-  <% end %>
+  <% end %>       
   <div class="container-button-pagination">
+  <%= link_to new_user_post_path(@user) do %>
+    <button class="add-new-post">Add New Post</button>
+    <% end %>
     <%= button_to user_post_path(@user.id, @user.posts.order(id: :desc).first.id), method: :get, class: "button-pagination" do %>
       Pagination
     <% end %>

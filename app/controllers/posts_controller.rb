@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
+
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts.includes(:comments, :author)
@@ -7,6 +9,7 @@ class PostsController < ApplicationController
   def show
     @user = User.find(params[:user_id])
     @post = @user.posts.find(params[:id])
+    @comments = @post.comments.includes(:author)
   end
 
   def new
@@ -24,6 +27,13 @@ class PostsController < ApplicationController
       else
         format.html { render :new }
       end
+    end
+  end
+
+  def destroy
+    @post = Post.find(params[:id]).destroy
+    respond_to do |format|
+      format.html { redirect_to user_posts_path(current_user), notice: 'Post destroyed successfully' }
     end
   end
 
