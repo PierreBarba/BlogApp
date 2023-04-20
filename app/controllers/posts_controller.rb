@@ -32,8 +32,8 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id]).destroy
     respond_to do |format|
       format.html { redirect_to user_posts_path(current_user), notice: 'Post destroyed successfully' }
+    end
   end
-end
 
   private
 
