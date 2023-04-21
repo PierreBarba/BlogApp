@@ -11,6 +11,10 @@ class Post < ApplicationRecord
     comments.order(created_at: :desc).limit(5)
   end
 
+  def as_json(options = {})
+    super({ only: %i[title text] }.merge(options))
+  end
+
   after_save :update_post_counter
   after_save :update_post_counter
 
